@@ -7,6 +7,7 @@ holiday_hash[:summer][:fourth_of_july][1]
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
+  binding.pry
   holiday_hash[:winter].each do |holiday, decoration|
     decoration.push supply
 
@@ -49,6 +50,16 @@ def all_supplies_in_holidays(holiday_hash)
    end
  end
 end
+
+
+#  :winter => {
+  #  :christmas => ["Lights", "Wreath"],
+  #  :new_years => ["Party Hats"]
+
+#  Winter:
+  #  Christmas: Lights, Wreath
+  #  New Years: Party Hats
+
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
